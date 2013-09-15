@@ -34,14 +34,11 @@ module MetricFu
     LOADER.load_tasks(tasks_relative_path)
   end
 
+  def self.configuration; LOADER.configuration; end
+  def self.graph; LOADER.graph;   end
+  def self.result; LOADER.result; end
+  def self.reset; LOADER.reset ;  end
+
   LOADER.setup
 
-  def self.reset
-    # TODO Don't like how this method needs to know
-    # all of these class variables that are defined
-    # in separate classes.
-    @configuration = nil
-    @graph = nil
-    @result = nil
-  end
 end

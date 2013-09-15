@@ -1,9 +1,5 @@
 module MetricFu
 
-  def self.graph
-    @graph ||= Graph.new
-  end
-
   class Graph
 
     attr_accessor :graphers

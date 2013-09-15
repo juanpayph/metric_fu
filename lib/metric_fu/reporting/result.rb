@@ -1,11 +1,5 @@
 module MetricFu
 
-  # MetricFu.result memoizes access to a Result object, that will be
-  # used throughout the lifecycle of the MetricFu app.
-  def self.result
-    @result ||= Result.new
-  end
-
   # = Result
   #
   # The Result class is responsible for one thing:
