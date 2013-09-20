@@ -1,5 +1,7 @@
 module MetricFu
   class MetricRoodi < Metric
+    require_relative 'roodi'
+    require_relative 'roodi_grapher'
 
     def name
       :roodi

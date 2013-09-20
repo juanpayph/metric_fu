@@ -1,5 +1,7 @@
 module MetricFu
   class MetricStats < Metric
+    require_relative 'stats'
+    require_relative 'stats_grapher'
 
     def name
       :stats

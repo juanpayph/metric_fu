@@ -1,5 +1,6 @@
 module MetricFu
   class MetricSaikuro < Metric
+    require_relative 'saikuro'
 
     def name
       :saikuro

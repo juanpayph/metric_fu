@@ -1,5 +1,6 @@
 module MetricFu
   class MetricCane < Metric
+    require_relative 'cane'
 
     def name
       :cane

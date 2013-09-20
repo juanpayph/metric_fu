@@ -1,5 +1,7 @@
 module MetricFu
   class MetricFlay < Metric
+    require_relative 'flay'
+    require_relative 'flay_grapher'
 
     def name
       :flay

@@ -1,5 +1,7 @@
 module MetricFu
   class MetricRcov < Metric
+    require_relative 'rcov'
+    require_relative 'rcov_grapher'
 
     def name
       :rcov

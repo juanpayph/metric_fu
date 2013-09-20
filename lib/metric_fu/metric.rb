@@ -17,6 +17,16 @@ module MetricFu
 
     # TODO: Confirm this catches load errors from requires in subclasses, such as for flog
     def activate
+      paths = []
+      paths << generator_path = "#{name}/#{name}"
+      paths << hotspot_path = "#{name}/#{name}_hotspot"
+      if has_graph?
+        paths << grapher_path   = "#{name}/#{name}_grapher"
+        paths << grapher_path   = "#{name}/#{name}_bluff_grapher"
+        paths << grapher_path   = "#{name}/#{name}_gchart_grapher"
+      end
+      paths.delete(hotspot_path) unless File.exists?(hotspot_path)
+      MetricFu.metrics_require { paths }
       @libraries.each {|library| require(library) }
       self.activated = true
     rescue LoadError => e

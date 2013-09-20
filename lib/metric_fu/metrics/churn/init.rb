@@ -1,5 +1,6 @@
 module MetricFu
   class MetricChurn < Metric
+    require_relative 'churn'
 
     def name
       :churn

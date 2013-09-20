@@ -1,5 +1,7 @@
 module MetricFu
   class MetricReek < Metric
+    require_relative 'reek'
+    require_relative 'reek_grapher'
 
     def name
       :reek

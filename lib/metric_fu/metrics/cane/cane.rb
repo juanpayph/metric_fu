@@ -1,5 +1,6 @@
 module MetricFu
   class CaneGenerator < Generator
+    require_relative 'violations'
     attr_reader :violations, :total_violations
 
     def self.metric

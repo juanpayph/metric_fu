@@ -1,5 +1,7 @@
 module MetricFu
   class MetricFlog < Metric
+    require_relative 'flog'
+    require_relative 'flog_grapher'
 
     def name
       :flog

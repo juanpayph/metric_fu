@@ -1,5 +1,7 @@
 module MetricFu
   class MetricRailsBestPractices < Metric
+    require_relative 'rails_best_practices'
+    require_relative 'rails_best_practices_grapher'
 
     def name
       :rails_best_practices
