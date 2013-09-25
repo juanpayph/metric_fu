@@ -1,4 +1,5 @@
 require 'spec_helper'
+MetricFu.metrics_require { 'hotspots/analysis/rankings' }
 
 describe MetricFu::HotspotRankings do
 

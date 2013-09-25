@@ -26,7 +26,7 @@ module MetricFu
         paths << grapher_path   = "#{name}/#{name}_gchart_grapher"
       end
       paths.delete(hotspot_path) unless File.exists?(hotspot_path)
-      MetricFu.metrics_require { paths }
+      # MetricFu.metrics_require { paths }
       @libraries.each {|library| require(library) }
       self.activated = true
     rescue LoadError => e

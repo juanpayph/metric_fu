@@ -1,4 +1,5 @@
 require "spec_helper"
+MetricFu.reporting_require { 'result' }
 
 describe MetricFu do
 

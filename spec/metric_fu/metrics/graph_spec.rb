@@ -1,4 +1,5 @@
 require "spec_helper"
+MetricFu.metrics_require { 'graph' }
 
 describe MetricFu do
 
@@ -17,14 +18,14 @@ describe MetricFu::Graph do
 
   describe "responding to #add with gchart enabled" do
     it 'should instantiate a grapher and push it to graphers' do
-      @graph.graphers.should_receive(:push).with(an_instance_of(RcovGchartGrapher))
+      @graph.graphers.should_receive(:push).with(an_instance_of(FlogGchartGrapher))
       @graph.add("rcov", 'gchart')
     end
   end
 
   describe "responding to #add with gchart enabled" do
     it 'should instantiate a grapher and push it to graphers' do
-      @graph.graphers.should_receive(:push).with(an_instance_of(RcovGchartGrapher))
+      @graph.graphers.should_receive(:push).with(an_instance_of(FlogGchartGrapher))
       @graph.add("rcov", 'gchart')
     end
   end

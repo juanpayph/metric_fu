@@ -1,8 +1,8 @@
 require File.expand_path('analysis_error', MetricFu.errors_dir)
 %w(table record grouping ranking problems analyzed_problems analyzer_tables rankings).each do |path|
-  MetricFu.metrics_require   { "hotspots/analysis/#{path}" }
+  # MetricFu.metrics_require   { "hotspots/analysis/#{path}" }
 end
-MetricFu.metrics_require   { 'hotspots/hotspot' }
+# MetricFu.metrics_require   { 'hotspots/hotspot' }
 
 module MetricFu
   class HotspotAnalyzer

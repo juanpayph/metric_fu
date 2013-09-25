@@ -1,4 +1,4 @@
-MetricFu.reporting_require { 'graphs/grapher' }
+# MetricFu.reporting_require { 'graphs/grapher' }
 module MetricFu
   class CaneGrapher < Grapher
     attr_accessor :cane_violations, :labels

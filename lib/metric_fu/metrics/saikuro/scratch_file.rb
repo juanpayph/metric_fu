@@ -1,4 +1,4 @@
-MetricFu.metrics_require   { 'saikuro/parsing_element' }
+# MetricFu.metrics_require   { 'saikuro/parsing_element' }
 module MetricFu
   class SaikuroScratchFile
 

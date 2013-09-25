@@ -1,4 +1,4 @@
-MetricFu.reporting_require { 'graphs/grapher' }
+# MetricFu.reporting_require { 'graphs/grapher' }
 module MetricFu
   class FlayGrapher < Grapher
     attr_accessor :flay_score, :labels

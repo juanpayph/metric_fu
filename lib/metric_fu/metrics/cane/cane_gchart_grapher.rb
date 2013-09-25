@@ -1,4 +1,4 @@
-MetricFu.metrics_require   { 'cane/cane_grapher' }
+# MetricFu.metrics_require   { 'cane/cane_grapher' }
 module MetricFu
   class CaneGchartGrapher < CaneGrapher
     def title

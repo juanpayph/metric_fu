@@ -1,4 +1,4 @@
-MetricFu.metrics_require   { 'rails_best_practices/rails_best_practices_grapher' }
+# MetricFu.metrics_require   { 'rails_best_practices/rails_best_practices_grapher' }
 module MetricFu
   class RailsBestPracticesBluffGrapher < RailsBestPracticesGrapher
     def title

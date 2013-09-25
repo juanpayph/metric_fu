@@ -1,9 +1,10 @@
 require "spec_helper"
+require File.join(MetricFu.data_structures_dir, 'location')
 
 describe MetricFu::Location do
 
   context "with non-standard Reek method names" do
-    # reek reports the method with :: not # on modules like 
+    # reek reports the method with :: not # on modules like
     # module ApplicationHelper \n def signed_in?, convert it so it records correctly
     # class_or_method_name = class_or_method_name.gsub(/\:\:/,"#") if method_bug_conversion
 
@@ -22,24 +23,24 @@ describe MetricFu::Location do
     it "has class name" do
       @location.class_name.should  == 'ApplicationHelper'
     end
-    
+
   end
 
   context "using new" do
-    
-    before do 
+
+    before do
       @location = Location.new("lib/foo.rb", "Foo", "Foo#some_method")
     end
 
     it "should return fully qualified method" do
       @location.method_name.should == 'Foo#some_method'
     end
-    
+
   end
 
   context "using .for with class" do
 
-    before do 
+    before do
       @location = Location.for("Module::Foo")
     end
 
@@ -58,8 +59,8 @@ describe MetricFu::Location do
   end
 
   context "using .for with method" do
-    
-    before do 
+
+    before do
       @location = Location.for("Module::Foo#some_method")
     end
 
@@ -78,7 +79,7 @@ describe MetricFu::Location do
   end
 
   context "with class method" do
-    
+
     it "provides non-qualified name" do
       location = Location.for("Foo.some_class_method")
       location.simple_method_name.should == '.some_class_method'
@@ -87,7 +88,7 @@ describe MetricFu::Location do
   end
 
   context "with instance method" do
-    
+
     it "provides non-qualified name" do
       location = Location.for("Foo#some_class_method")
       location.simple_method_name.should == '#some_class_method'

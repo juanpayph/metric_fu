@@ -1,6 +1,6 @@
 module MetricFu
   class HotspotAnalyzedProblems
-    MetricFu.metrics_require   { "hotspots/analysis/ranked_problem_location" }
+    # MetricFu.metrics_require   { "hotspots/analysis/ranked_problem_location" }
 
     def initialize(hotspot_rankings, analyzer_tables)
       @hotspot_rankings = hotspot_rankings

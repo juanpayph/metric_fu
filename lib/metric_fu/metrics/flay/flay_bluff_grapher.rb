@@ -1,4 +1,4 @@
-MetricFu.metrics_require   { 'flay/flay_grapher' }
+# MetricFu.metrics_require   { 'flay/flay_grapher' }
 module MetricFu
   class FlayBluffGrapher < FlayGrapher
     def title

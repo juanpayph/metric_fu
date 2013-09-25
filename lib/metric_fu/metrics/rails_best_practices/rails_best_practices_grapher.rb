@@ -1,4 +1,4 @@
-MetricFu.reporting_require { 'graphs/grapher' }
+# MetricFu.reporting_require { 'graphs/grapher' }
 module MetricFu
   class RailsBestPracticesGrapher < Grapher
     attr_accessor :rails_best_practices_count, :labels

@@ -1,6 +1,7 @@
 require "spec_helper"
+MetricFu.metrics_require { 'hotspots/hotspot_analyzer' }
 
-describe HotspotAnalyzer do
+describe MetricFu::HotspotAnalyzer do
 
   it "should have its own tests regarding how it orchestrates the analysis of results, rankings, tables, and analyzed_problems"
 

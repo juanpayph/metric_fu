@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'metric_fu/cli/helper'
+MetricFu.lib_require { 'cli/helper' }
 MetricFu.configuration.configure_metric(:rcov) do |rcov|
   rcov.enabled = true
 end

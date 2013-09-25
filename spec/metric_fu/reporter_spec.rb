@@ -1,4 +1,5 @@
 require "spec_helper"
+MetricFu.lib_require   { 'reporter' }
 
 describe MetricFu::Reporter do
 

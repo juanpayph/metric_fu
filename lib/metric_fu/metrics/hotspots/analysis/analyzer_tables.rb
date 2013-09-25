@@ -1,7 +1,7 @@
 module MetricFu
   class AnalyzerTables
     %w(table).each do |path|
-      MetricFu.metrics_require   { "hotspots/analysis/#{path}" }
+      # MetricFu.metrics_require   { "hotspots/analysis/#{path}" }
     end
 
     def initialize(analyzer_columns)

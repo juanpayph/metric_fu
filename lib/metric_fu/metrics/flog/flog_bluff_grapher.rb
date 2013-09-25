@@ -1,4 +1,4 @@
-MetricFu.metrics_require   { 'flog/flog_grapher' }
+# MetricFu.metrics_require   { 'flog/flog_grapher' }
 module MetricFu
   class FlogBluffGrapher < FlogGrapher
     def title

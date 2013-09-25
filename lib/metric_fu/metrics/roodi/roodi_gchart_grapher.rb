@@ -1,4 +1,4 @@
-MetricFu.metrics_require   { 'roodi/roodi_grapher' }
+# MetricFu.metrics_require   { 'roodi/roodi_grapher' }
 module MetricFu
   class RoodiGchartGrapher < RoodiGrapher
     def title

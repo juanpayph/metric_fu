@@ -1,3 +1,4 @@
+MetricFu.lib_require { 'metric' }
 MetricFu.logging_require { 'mf_debugger' }
 module MetricFu
 

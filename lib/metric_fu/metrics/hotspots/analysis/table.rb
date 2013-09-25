@@ -1,6 +1,4 @@
-%w(record).each do |path|
-  MetricFu.metrics_require   { "hotspots/analysis/#{path}" }
-end
+MetricFu.metrics_require { 'hotspots/analysis/record' }
 
 module MetricFu
   class Table

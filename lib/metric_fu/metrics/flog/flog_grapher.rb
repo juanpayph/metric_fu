@@ -1,4 +1,4 @@
-MetricFu.reporting_require { 'graphs/grapher' }
+# MetricFu.reporting_require { 'graphs/grapher' }
 module MetricFu
   class FlogGrapher < Grapher
     attr_accessor :flog_average, :labels, :top_five_percent_average

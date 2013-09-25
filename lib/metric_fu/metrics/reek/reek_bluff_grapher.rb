@@ -1,4 +1,4 @@
-MetricFu.metrics_require   { 'reek/reek_grapher' }
+# MetricFu.metrics_require   { 'reek/reek_grapher' }
 module MetricFu
   class ReekBluffGrapher < ReekGrapher
     def title

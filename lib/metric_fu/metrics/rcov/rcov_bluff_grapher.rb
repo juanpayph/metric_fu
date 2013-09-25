@@ -1,4 +1,4 @@
-MetricFu.metrics_require   { 'rcov/rcov_grapher' }
+# MetricFu.metrics_require   { 'rcov/rcov_grapher' }
 module MetricFu
   class RcovBluffGrapher < RcovGrapher
     def title

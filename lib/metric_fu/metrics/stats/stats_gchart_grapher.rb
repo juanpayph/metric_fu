@@ -1,4 +1,4 @@
-MetricFu.metrics_require   { 'stats/stats_grapher' }
+# MetricFu.metrics_require   { 'stats/stats_grapher' }
 module MetricFu
   class StatsGchartGrapher < StatsGrapher
     def title

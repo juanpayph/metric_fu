@@ -1,4 +1,5 @@
 require "spec_helper"
+require File.join(MetricFu.formatter_dir, 'html')
 
 describe MetricFu::Formatter::HTML do
 

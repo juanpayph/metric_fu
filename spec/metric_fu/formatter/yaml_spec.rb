@@ -1,4 +1,5 @@
 require "spec_helper"
+require File.join(MetricFu.formatter_dir, 'yaml')
 
 describe MetricFu::Formatter::YAML do
 

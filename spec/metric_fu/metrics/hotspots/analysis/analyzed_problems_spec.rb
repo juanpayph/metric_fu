@@ -1,5 +1,5 @@
 require 'spec_helper'
-
+MetricFu.metrics_require { 'hotspots/analysis/analyzed_problems' }
 describe MetricFu::HotspotAnalyzedProblems do
 
   def analyzed_problems(result_hash)

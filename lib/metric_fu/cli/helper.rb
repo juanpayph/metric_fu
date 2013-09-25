@@ -1,5 +1,6 @@
 require 'metric_fu'
 require 'metric_fu/cli/parser'
+MetricFu.lib_require { 'run' }
 # see https://github.com/grosser/pru/blob/master/bin/pru
 module MetricFu
   module Cli
