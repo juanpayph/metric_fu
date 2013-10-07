@@ -10,7 +10,7 @@ module MetricFu
 
     def emit
       parse_options = FlogCLI.parse_options [
-        "--all",
+        "--all","--methods-only",
         options[:continue] ? "--continue" : nil,
       ].compact
       @flogger = FlogCLI.new parse_options
